@@ -1,0 +1,42 @@
+{
+  "originHash" : "3c6a97bfa967f9a9f7b43ad4514f0be5ea832e1aa81d66c68b37533f011fd329",
+  "pins" : [
+    {
+      "identity" : "supervision",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:JohnDemirci/Supervision.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "0d9e859ed92dac4ad03018ae20ef62eff481ca1e"
+      }
+    },
+    {
+      "identity" : "swift-issue-reporting",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-issue-reporting.git",
+      "state" : {
+        "revision" : "dfd70507def84cb5fb821278448a262c6ff2bbad",
+        "version" : "1.9.0"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax",
+      "state" : {
+        "revision" : "f99ae8aa18f0cf0d53481901f88a0991dc3bd4a2",
+        "version" : "601.0.1"
+      }
+    },
+    {
+      "identity" : "valueobservation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JohnDemirci/ValueObservation.git",
+      "state" : {
+        "revision" : "8876185091d4da0d3aa0b4ffd6c9983d348dde26",
+        "version" : "1.0.3"
+      }
+    }
+  ],
+  "version" : 3
+}

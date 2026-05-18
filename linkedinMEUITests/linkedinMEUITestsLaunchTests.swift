@@ -20,7 +20,16 @@ final class linkedinMEUITestsLaunchTests: XCTestCase {
     @MainActor
     func testLaunch() throws {
         let app = XCUIApplication()
+
+        // Measure launch time
+        let start = ProcessInfo.processInfo.systemUptime
         app.launch()
+        let elapsed = ProcessInfo.processInfo.systemUptime - start
+
+        // Print and attach launch time
+        let message = String(format: "App launch time: %.3f s", elapsed)
+        print(message)
+        add(XCTAttachment(string: message))
 
         // Insert steps here to perform after app launch but before taking a screenshot,
         // such as logging into a test account or navigating somewhere in the app

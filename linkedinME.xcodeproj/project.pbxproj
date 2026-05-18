@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		52D3DAD32FBAC3FA001535A9 /* Supervision in Frameworks */ = {isa = PBXBuildFile; productRef = 52D3DAD22FBAC3FA001535A9 /* Supervision */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		52DB14712F775B8400076FBF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D3DAD32FBAC3FA001535A9 /* Supervision in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = linkedinME;
 			packageProductDependencies = (
+				52D3DAD22FBAC3FA001535A9 /* Supervision */,
 			);
 			productName = linkedinME;
 			productReference = 52DB14632F775B8300076FBF /* linkedinME.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 52DB145A2F775B8300076FBF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				52D3DAD12FBAC3FA001535A9 /* XCRemoteSwiftPackageReference "Supervision" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 52DB14642F775B8300076FBF /* Products */;
 			projectDirPath = "";
@@ -414,10 +423,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -446,10 +456,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -578,6 +589,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52D3DAD12FBAC3FA001535A9 /* XCRemoteSwiftPackageReference "Supervision" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:JohnDemirci/Supervision.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52D3DAD22FBAC3FA001535A9 /* Supervision */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52D3DAD12FBAC3FA001535A9 /* XCRemoteSwiftPackageReference "Supervision" */;
+			productName = Supervision;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52DB145B2F775B8300076FBF /* Project object */;
 }
